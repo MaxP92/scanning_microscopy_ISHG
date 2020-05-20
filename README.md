@@ -54,9 +54,10 @@ https://www.osapublishing.org/oe/abstract.cfm?uri=oe-27-26-38435
 doi:10.1364/OE.27.038435  
 
 Also, more details in the thesis:   
+https://tel.archives-ouvertes.fr/view/index/docid/2614233
 
 To treat the I-SHG data, refer to rep.   
-https://tel.archives-ouvertes.fr/view/index/docid/2614233
+https://github.com/MaxP92/ISHG_treat_disp_GUI
 
 -----------------
  
