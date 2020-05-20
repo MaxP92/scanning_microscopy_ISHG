@@ -1,4 +1,6 @@
 # scanning_microscopy_ISHG
+[![DOI](https://zenodo.org/badge/265588502.svg)](https://zenodo.org/badge/latestdoi/265588502)
+
 Scanning microscope (orig. for nonlinear optical microscopy) to acquire images, with speciality for I-SHG microscopy
 
 --- Best practices --- 
