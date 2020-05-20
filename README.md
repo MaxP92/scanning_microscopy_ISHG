@@ -1,24 +1,6 @@
 # scanning_microscopy_ISHG
 Scanning microscope (orig. for nonlinear optical microscopy) to acquire images, with speciality for I-SHG microscopy
 
---- Infos ---
-Testing in Windows (7) x64
-Python x64 (but worked with x32), version 3.6 (worked with 3.4 and 3.5)
-with Anaconda3 (all basic packages)
-This API comprises previous uploads such as:
-github.com/MaxP92/iMic-Till-python if you have a iMic microscope (not the case for Nikon, Olympus, Thorlabs etc.)
-github.com/MaxP92/thorlabs_python_low-level if you have a Thorlabs XY stage (not the case for e.g. Prior or PI)
-
---- Needed ---
-- Anaconda 5.1
-- msl-loadlib (github.com/MSLNZ/msl-loadlib) if using Python x64
-- pyQt5 (to include in a GUI, but not mandatory)
-- pySerial
-- pyqtgraph
-- py nidaqmx (if using a NI acq. card)
-- all libraries for devices (Thorlabs, PI, Ocean Optics etc.)  
- !! CHECK the file to_install.txt !!
-
 --- Best practices --- 
 - create a folder "prog microscope 18" where all the GitHub files are located
 - create also a folder "Recycle imgs" (for the tmp cleaning)
@@ -30,6 +12,27 @@ cd *folder*
 python main_microscope.py  
 A GUI should appear if no errors  
 
+The main GUI:
+![](https://github.com/MaxP92/scanning_microscopy_ISHG/blob/master/images/gui_screenshot.png?raw=true)
+
+--- Infos ---  
+Testing in Windows (7) x64  
+Python x64 (but worked with x32), version 3.6 (worked with 3.4 and 3.5)  
+with Anaconda3 (all basic packages)  
+This API comprises previous uploads such as:  
+github.com/MaxP92/iMic-Till-python if you have a iMic microscope (not the case for Nikon, Olympus, Thorlabs etc.)  
+github.com/MaxP92/thorlabs_python_low-level if you have a Thorlabs XY stage (not the case for e.g. Prior or PI)  
+
+--- Needed ---
+- Anaconda 5.1
+- msl-loadlib (github.com/MSLNZ/msl-loadlib) if using Python x64
+- pyQt5 (to include in a GUI, but not mandatory)
+- pySerial
+- pyqtgraph
+- py nidaqmx (if using a NI acq. card)
+- all libraries for devices (Thorlabs, PI, Ocean Optics etc.)  
+ !! CHECK the file to_install.txt !!
+ 
 ---- Files -----  
 list_controls.xlsx for a few variables used, wand what they mean  
 Control_microscope.pdf for a FULL DESCRIPTION of the software and controls  
