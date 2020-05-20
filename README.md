@@ -53,7 +53,7 @@ doi:10.1364/OE.27.038435
 Also, more details in the thesis:   
 
 To treat the I-SHG data, refer to rep.   
-**
+https://tel.archives-ouvertes.fr/view/index/docid/2614233
 
 -----------------
  
