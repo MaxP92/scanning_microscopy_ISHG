@@ -1,0 +1,3 @@
+From the rep. github.com/qpit/thorlabs_apt
+
+But modified function core.py, to replace (in thorlabs_apt-0.1\thorlabs_apt)
