@@ -1,0 +1,8 @@
+open Windows command prompt (cmd)
+
+cd *this REP*
+python main_microscope.py
+
+versions can choose to not launch the Thread at start-up (user choose it)
+iSHG fast stable
+

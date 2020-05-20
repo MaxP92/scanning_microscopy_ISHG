@@ -1,0 +1,15 @@
+offset X (mm)
+0.07
+offset Y (mm)
+-0.03
+Obj choice
+0
+filter_top_choice
+2
+filter_bottom_choice
+1
+Z motor (mm)
+0.0
+
+Z piezo (um)
+0.698
