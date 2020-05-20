@@ -20,12 +20,12 @@ Testing in Windows (7) x64
 Python x64 (but worked with x32), version 3.6 (worked with 3.4 and 3.5)  
 with Anaconda3 (all basic packages)  
 This API comprises previous uploads such as:  
-github.com/MaxP92/iMic-Till-python if you have a iMic microscope (not the case for Nikon, Olympus, Thorlabs etc.)  
-github.com/MaxP92/thorlabs_python_low-level if you have a Thorlabs XY stage (not the case for e.g. Prior or PI)  
+https://github.com/MaxP92/iMic-Till-python if you have a iMic microscope (not the case for Nikon, Olympus, Thorlabs etc.)  
+https://github.com/MaxP92/thorlabs_python_low-level if you have a Thorlabs XY stage (not the case for e.g. Prior or PI)  
 
 --- Needed ---
 - Anaconda 5.1
-- msl-loadlib (github.com/MSLNZ/msl-loadlib) if using Python x64
+- msl-loadlib (https://github.com/MSLNZ/msl-loadlib) if using Python x64
 - pyQt5 (to include in a GUI, but not mandatory)
 - pySerial
 - pyqtgraph
