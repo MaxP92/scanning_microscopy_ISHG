@@ -5228,8 +5228,8 @@ class Main(QMainWindow, Ui_MainWindow):
         # the rest are the params to disp
         
         array_ishg_4d = array_ctr_3d = arrlist = None
-        if (self.ishg_EOM_AC): # # ishg EOM fast
-            if type(paquet_received) == list: # normal
+        if self.ishg_EOM_AC[0]: # ishgfast mode chosen
+            if type(paquet_received) == list: # normal if ishgfast
                 if len(paquet_received) > 2: # # filled array in ishg
                     if paquet_received[1] is not None: array_ctr_3d = paquet_received[1]
                     array_ishg_4d = paquet_received[2]
@@ -5241,9 +5241,9 @@ class Main(QMainWindow, Ui_MainWindow):
                             except queue.Empty: print('did not receiv buffers ISHG in list as expected !!')
                 else:  # # special for saving whole array
                     arrlist = paquet_received[1]
-                    
-                paquet_received = paquet_received[0]    # # is array_3d, the normal image   
-            else: print('did not receive list paquet for ishg fast as expected !\n')
+            else: print('did not receive list paquet for ishg fast as expected !\n')   
+            paquet_received = paquet_received[0]    # # is array_3d, the normal image   
+        # print(paquet_received.shape)
         
         pg_plot_scripts.display_save_img_gui_util (self, datetime, numpy, shutil, glob, QtWidgets, PIL, os, param_ini, jobs_scripts, img_hist_plot_mp, paquet_received, sat_value_list, array_ishg_4d, array_ctr_3d, arrlist, [True])  # # True for add new img (full func)
         # # datetime, numpy, shutil, glob, QtWidgets, PIL, os, param_ini, jobs_scripts, img_hist_plot_mp, paquet_received, sat_value_list, array_ishg_4d, array_ctr_3d, arrlist, add_new_img)

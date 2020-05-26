@@ -619,10 +619,13 @@ def display_save_img_gui_util(self, datetime, numpy, shutil, glob, QtWidgets, PI
         # paquet_received is a 3d array
             # # print('wlh', paquet_received.shape, num_pmt)
 
-            if numpy.amin(paquet_received[ct,:,:])<0: # !!!
+            min_img_now = numpy.amin(paquet_received[ct,:,:])
+            if numpy.amin(min_img_now)<0: # !!!
+                print('\n min img unsual: %.1f counts !!' % min_img_now)
                 # # paquet_received[ct,:,:] = paquet_received[ct,:,:] - numpy.amin(paquet_received[ct,:,:])
                 wh = numpy.where(paquet_received[ct,:,:]<0)
                 paquet_received[ct, wh[0], wh[1]] = 0
+                
                                 
             # # print(paquet_received[num_pmt,10:20,10:20])
 
